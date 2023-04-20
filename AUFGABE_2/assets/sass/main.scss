@@ -1,0 +1,119 @@
+
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+$flexVar:flex;
+$margin1:1rem;
+
+@mixin flexME{
+    display: $flexVar;
+	justify-content: center;
+}
+
+@mixin flexRowWrap{
+    display: $flexVar;
+    flex-flow: row wrap;
+}
+
+
+.header {
+	height: 6rem;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 1.5rem;
+}
+
+h1, h2 {
+	font-size: 1rem;
+}
+
+.nav_links {
+    @include flexME;
+
+	margin-top: $margin1;
+	margin-bottom: $margin1;
+	background-color: rgba(0, 0, 255, 0.514);
+}
+
+
+a {
+padding:1rem;
+	text-decoration: none;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    @include flexME;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.section_text > h3 {
+	text-align: center;
+}
+
+.section_text, .section_images {
+	margin: 1rem;
+}
+
+.section_images {
+    @include flexME;
+
+	flex-flow: column nowrap;
+	align-items: center;
+    
+}
+img {
+	height: 12rem;
+	width: 18rem;
+	margin: 0 0.5rem 1rem 0.5rem
+}
+
+.aside {
+    @include flexME;
+	flex-flow: column nowrap;
+	margin: $margin1;
+}
+
+
+.first_aside, .second_aside, .third_aside, .fourth_aside {
+	border: 0.2rem solid rgba(0, 0, 255, 0.678);    
+	padding: 1rem;
+	margin-bottom:$margin1;
+}
+
+.footer_links {
+    @include flexME;
+
+	margin-bottom: $margin1;
+}
+.footer {
+	height: 5rem;
+	margin-top: $margin1;
+	background-color: rgba(0, 0, 255, 0.678);
+}
+
+@media screen and (min-width: 600px) {
+	.section_images {
+        @include flexRowWrap;
+	}
+
+	.section_text {
+    	width: 70%;
+	}
+
+	.aside {
+       @include flexRowWrap;
+	}
+
+	.first_aside, .second_aside, .third_aside, .fourth_aside {
+    	width: 45%;
+    	margin: 0.5rem;
+	}
+}

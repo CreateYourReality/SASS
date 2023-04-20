@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes animBall {
+  100% {
+    transform: translateX(500px);
+  }
+}
+.container {
+  height: 50vh;
+  width: 100%;
+}
+
+.ball1 {
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  animation: animBall 1s 0s infinite alternate;
+}
+
+.ball2 {
+  background-color: red;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  animation: animBall 1s 0.5s infinite alternate;
+}
+
+.ball3 {
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  animation: animBall 1s 1s infinite alternate;
+}
+
+/*# sourceMappingURL=style.css.map */

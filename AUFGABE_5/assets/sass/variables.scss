@@ -1,0 +1,13 @@
+/* ##### COLORS ##### */
+$yellow: #f5f06a ;
+$red: #fc5876;
+$blue:#4ce1ff ;
+$purple:#ae7fff;
+$white:#ffffff;
+
+$stripes:linear-gradient(62deg, $yellow 12.50%, $red 12.50%, $red 25%, $blue 25%, $blue 37.50%, $purple 37.50%, $purple 50%, $yellow 50%, $yellow 62.50%, $red 62.50%, $red 75%, $blue 75%, $blue 87.50%, $purple 87.50%, $purple 100%);;
+
+
+$bigFontSize: clamp(15rem,15vw,30rem);
+$smallFontSize: clamp(5rem,5vw,10rem);
+$iconFontSize: clamp(1.5rem,2vw,3rem);

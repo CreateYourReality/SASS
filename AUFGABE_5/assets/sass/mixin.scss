@@ -1,0 +1,17 @@
+@mixin gridMe($columnFR,$rowFR){
+    display:grid;
+    grid-template-columns: repeat($columnFR,1fr);
+    grid-template-rows: repeat($rowFR,1fr);
+}
+
+@mixin headlines($fontSize){
+    font-size: $fontSize;
+    color: $white;
+    text-align: center
+}
+
+@mixin flexME{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

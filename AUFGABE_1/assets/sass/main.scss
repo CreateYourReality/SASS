@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$size: 64px;
+
+$twitter:#1da1f2;
+$behance:#1769ff;
+$facebook:#1877f2;
+$vimeo:#1ab7ea;
+$snapchat:#fffc00;
+$airbnb:#fd5c63;
+$amazon:#ff9900;
+$android:#a4c639;
+$stackoverflow:#f48024;
+$ubuntu:#dd4814;
+$github:#4078c0;
+$js:#f7df1e;
+
+.la-twitter{
+    color: $twitter;
+    font-size: $size;
+}
+
+.la-behance{
+    color: $behance;
+    font-size: $size;
+
+}
+
+.la-facebook-f{
+    color: $facebook;
+    font-size: $size;
+
+    }
+
+.la-vimeo{
+    color: $vimeo;
+    font-size: $size;
+
+    }
+
+.la-snapchat{
+    color: $snapchat;
+    font-size: $size;
+
+    }
+
+.la-airbnb{
+    color: $airbnb;
+    font-size: $size;
+
+    }
+
+.la-amazon{
+    color: $amazon;
+    font-size: $size;
+
+    }
+
+.la-android{
+    color: $android;
+    font-size: $size;
+
+    }
+
+.la-stack-overflow{
+    color: $stackoverflow;
+    font-size: $size;
+
+    }
+
+.la-ubuntu{
+    color: $ubuntu;
+    font-size: $size;
+
+    }
+
+.la-github{
+    color: $github;
+    font-size: $size;
+
+    }
+
+.la-js-square{
+    color: $js;
+    font-size: $size;
+
+    }
